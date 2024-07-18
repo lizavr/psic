@@ -1,0 +1,75 @@
+@import "./../../assets/scss/mixins/buttons";
+
+:host {
+  display: flex;
+  background: #809be0;
+}
+.header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  width: 100%;
+  padding: 0 10px;
+  &-items {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  &-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    &-buttons {
+      display: flex;
+      & > * {
+        margin-left: 12px;
+      }
+    }
+  }
+  .logo-txt {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .welcome {
+    background: transparent;
+    border: 0;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+.support {
+  position: relative;
+  margin-right: 12px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    background-color: white;
+    top: 25%;
+    right: -12px;
+  }
+  &-popup {
+    position: absolute;
+    width: 420px;
+    right: 0;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow:
+      0px 8px 10px rgba(0, 0, 0, 0.14),
+      0px 3px 14px rgba(0, 0, 0, 0.12),
+      0px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    z-index: 5;
+  }
+}
+.support-btn {
+  @include header-btn-with-icon("../../../assets/icons/help.svg");
+}
+.logout-btn {
+  @include header-btn-with-icon("../../../assets/icons/logout.svg");
+}

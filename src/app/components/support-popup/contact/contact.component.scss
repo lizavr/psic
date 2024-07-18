@@ -1,0 +1,61 @@
+.popup-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  transition: all 0.1s ease;
+  color: inherit;
+
+  &:hover {
+    background-color: $gray-100;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    .contact-link-sign {
+      display: block;
+    }
+  }
+
+  &-sign {
+    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: $gray-200;
+
+    &-img {
+      display: block;
+      margin: 20% auto;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.contact {
+  &-name,
+  &-link {
+    margin: 2px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-link {
+    color: $blue-600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &-sign {
+      display: none;
+      margin-left: auto;
+      padding: 10px;
+      &:hover {
+        background-color: $gray-200;
+        border-radius: 4px;
+      }
+    }
+  }
+}

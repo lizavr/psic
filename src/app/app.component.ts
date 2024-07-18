@@ -10,5 +10,5 @@ import { ChildComponent as ExampleComponent } from './exqmple/ExampleComponent.c
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'zoneless-app';
+  title = 'psic';
 }
