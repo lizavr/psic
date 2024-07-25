@@ -20,6 +20,13 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'search',
+        loadComponent: () =>
+          import('./components/search/search.component').then(
+            (c) => c.SearchComponent
+          ),
+      },
+      {
         path: 'tests',
         loadComponent: () =>
           import('./components/tests/tests.component').then(

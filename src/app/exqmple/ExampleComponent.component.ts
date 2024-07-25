@@ -64,6 +64,8 @@ export class ChildComponent {
   constructor() {
     this.incrementSubject.subscribe(() => {
       this.count.set(this.count() + 1);
+      console.log(this.count);
+      console.log(this);
     });
   }
 

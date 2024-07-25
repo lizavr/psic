@@ -1,6 +1,6 @@
 :host {
   display: block;
-  width: 60px;
+  width: 70px;
 }
 
 .side-navigation {
@@ -9,9 +9,9 @@
   padding: 10px 0;
   margin: 0;
 
-    &-item {
+  &-item {
     list-style: none;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
 }
 
 .logo {
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +39,6 @@
 }
 
 .selected {
-  border-left: 3px solid #0093ee;
-  background: #19344d;
+  border-left: 3px solid #4fb8fa;
+  background: #809be0;
 }

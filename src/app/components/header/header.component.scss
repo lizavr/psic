@@ -5,8 +5,8 @@
   background: #809be0;
 }
 .header {
-  display: grid;
-  grid-template-columns: 100px 1fr;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 0 10px;
   &-items {
@@ -59,10 +59,8 @@
     right: 0;
     background-color: white;
     border-radius: 3px;
-    box-shadow:
-      0px 8px 10px rgba(0, 0, 0, 0.14),
-      0px 3px 14px rgba(0, 0, 0, 0.12),
-      0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14),
+      0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
     margin-top: 5px;
     z-index: 5;
   }

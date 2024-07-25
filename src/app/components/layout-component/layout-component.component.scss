@@ -1,10 +1,15 @@
+:host {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
 .sidebar-navigation {
   display: flex;
-  background: #1f293b;
-  width: 60px;
+  background: #ffafd0;
+  width: 70px;
 }
- :host {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 60px 1fr;
+
+.main {
+  width: 100%;
 }
