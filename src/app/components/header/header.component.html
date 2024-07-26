@@ -9,8 +9,8 @@
       <div class="support">
         <button
           class="support-btn"
-          (click)="toggleSupportPopup($event)"
-          [ngClass]="{ active: isSupportPopupOpen }"
+          (click)="toggleSupportPopup()"
+          [ngClass]="{ active: isSupportPopupOpen() }"
         >
           Support
         </button>

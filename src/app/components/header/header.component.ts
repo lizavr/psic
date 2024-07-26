@@ -14,8 +14,7 @@ import { ClickOutsideDirective } from '../../directives/click-outside.directive'
 export class HeaderComponent {
   isSupportPopupOpen = signal<boolean>(false);
 
-  protected toggleSupportPopup(event: Event): void {
-    event.stopPropagation();
+  protected toggleSupportPopup(): void {
     this.isSupportPopupOpen.set(!this.isSupportPopupOpen());
   }
 
