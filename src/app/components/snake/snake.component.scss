@@ -1,0 +1,76 @@
+// svg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
+// .........................................................
+// svg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   pointer-events: none; /* чтобы SVG не мешал кликам */
+// }
+
+// .blinking-circle {
+//   animation: blink 1s infinite;
+// }
+
+// @keyframes blink {
+//   0% {
+//     opacity: 1;
+//     r: 20;
+//   }
+//   50% {
+//     opacity: 0.5;
+//     r: 25; /* Увеличиваем размер в процессе моргания */
+//   }
+//   100% {
+//     opacity: 1;
+//     r: 20;
+//   }
+// }
+// ....................................................
+
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+//   100% {
+//     opacity: 0;
+//     transform: scale(2);
+//   }
+// }
+
+// .................................................
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.5);
+  }
+}
+
+div {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.5;
+  filter: blur(1px);
+  transition: all 0.5s ease-out;
+}
+/////////////////////////////////////////////////////////////
+///
+///
+// .line {
+//   position: absolute;
+//   height: 20px;
+//   background-color: rgba(149, 9, 237, 0.7);
+//   transform-origin: 0 0;
+//   pointer-events: none; /* Чтобы полоса не мешала взаимодействию с элементами страницы */
+//   //   filter: blur(2px); /* Добавляем размытость */
+// }
