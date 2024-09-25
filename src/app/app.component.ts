@@ -6,7 +6,7 @@ import { SnakeComponent } from './components/snake/snake.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ExampleComponent, SnakeComponent],
+  imports: [RouterOutlet, ExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
